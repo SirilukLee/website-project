@@ -1,0 +1,206 @@
+{% extends 'header.html' %}
+
+{% block content %}
+{% load static %}
+
+<!-- Navbar Zone -->
+<header>
+    <nav id="header-nav" class="navbar navbar-expand-lg navbar-dark ">
+
+        <div class="container-fluid">
+
+            <div class="">
+                <a href="/" class="">
+                    <div id="logo-img" alt="Logo image"></div>
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartlc"
+                aria-controls="navbartlc" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navbartlc" class="collapse navbar-collapse ">
+                <div style="display:flex; flex-direction: column; justify-items: end;" class="ml-auto">
+                    <ul class="navbar-nav ml-auto" id="navitem-up">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/ourcustomers" style="color: #FFFFFF">รายนามลูกค้า |</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/career" style="color: #FFFFFF">ร่วมงานกับเรา</a>
+                        </li>
+                    </ul>
+
+
+                    <ul class="navbar-nav ml-auto" id="navitem-low">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/" style="color:#FFFFFF;">หน้าหลัก&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/aboutus" style="color: #FFFFFF ">เกี่ยวกับเรา&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/productsnservices"
+                                style="color: #FFFFFF">สินค้าและบริการ&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/articles" style="color: #EFCB4D">ข่าวสารและกิจกรรม&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contactus" style="color: #FFFFFF">ติดต่อเรา</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- <a class="hamburger-menu" onclick="myFunction()">
+                    <span class="hamburger-icon"></span>
+                </a> -->
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+<!-- END Navbar -->
+
+
+<br><br>
+<div class="container" id="knowledges">
+    <h1>บทความน่ารู้</h1>
+
+    <br>
+    <div class="container" id="kl">
+        <div class="d-flex flex-wrap flex-md-nowrap">
+            <div style="border: solid 10px #EFCB4D; border-radius: 10px;">
+            </div>
+            <div class="col-md-6" id="img-kl">
+                <div><img src="{% static 'images/dhealth.jpg' %}"></div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3" style="height:280px ; border-bottom: solid 2px #EFCB4D; overflow: hidden;">
+                    <h4>4 เทรนด์ Digital Health ปี 2021-2022: วางรากฐานทาง เทคโนโลยีใหม่ สู่บริการด้านสุขภาพ</h4>
+                    <br>
+                    <p>ในช่วงสองปีที่ผ่านมานี้ถือเป็นช่วงที่อุตสาหกรรมการแพทย์และสาธารณสุขนั้นมีการเปลี่ยนแปลงเกิดขึ้นรวดเร็วอย่างที่ไม่เคยเป็นมาก่อน
+                        จากการมาของภัยโรคระบาด อย่างโควิด-19
+                        ที่ทำให้อุตสาหกรรมนี้ต่างต้องเร่งปรับตัวรับมือกันอย่างกระทันหัน
+                        โดยเฉพาะอย่างยิ่งในแง่ของการนำเทคโนโลยีมาใช้เพื่อรองรับการรักษาโรคด้วย แนวทางใหม่ๆ
+                        ที่จะช่วยลดความเสี่ยงในการแพร่ระบาดของโรคให้ได้อย่าง มีประสิทธิภาพ. . .</p>
+                     
+                </div>
+                <div>
+                    <a href="/article_digitalHealth">
+                        <h5>READ MORE</h5>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <br><br>
+    <div class="container" id="kl">
+        <div class="d-flex flex-wrap flex-md-nowrap">
+            <div style="border: solid 10px #EFCB4D; border-radius: 10px;">
+            </div>
+            <div class="col-md-6" id="img-kl">
+                <div><img src="{% static 'images/Frame24.png' %}" alt=""></div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3" style="height:280px ; border-bottom: solid 2px #EFCB4D; overflow: hidden;">
+                    <h4> 4 เหตุผลหลัก ทำไมวงการสาธารณสุขจึงต้องการ
+                        Data Science</h4>
+                    <br>
+                    <p>ในอุตสาหกรรมสาธารณสุขจะมีอะไรที่สำคัญไปกว่าผลลัพธ์ด้านสุขภาพ?
+                        ในทุกวันผู้ให้บริการด้านสาธารณสุขทั่วโลกต่างพยายามค้นหาวิถีทางที่จะปรับปรุง
+                        คุณภาพชีวิตของพวกเรา ซึ่งโลกเปลี่ยนแปลงไปเร็วเกินกว่าที่เราจะตามทัน
+                        การทำงานคนเดียวคงมิอาจปรับปรุง คุณภาพชีวิตคนไข้ได้อีกต่อไป เพราะจำนวน
+                        ข้อมูลด้านสาธารณสุขได้เติบโตอย่างรวดเร็ว ซึ่งนั่นมันทำให้เพิ่มความยากในการ
+                        ค้นหารูปแบบที่เหมาะสมกับข้อมูลขนาดใหญ่หรือที่เรียกกันว่า “Big Data”</p>
+                </div>
+                <div>
+                    <a href="/article_ds">
+                        <h5>READ MORE</h5>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <br><br>
+    <div class="container" id="kl">
+        <div class="d-flex flex-wrap flex-md-nowrap">
+            <div style="border: solid 10px #EFCB4D; border-radius: 10px;">
+            </div>
+            <div class="col-md-6" id="img-kl">
+                <div><img src="{% static 'images/dtrans.jpg' %}" alt=""></div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3" style="height:280px ; border-bottom: solid 2px #EFCB4D; overflow: hidden;">
+                    <h4>โรงพยาบาล และหน่วยงาน สาธารณสุขไทย จะเริ่มต้นทำ Digital Transformation ได้อย่างไร?</h4>
+                    <br>
+                    <p>สำหรับโรงพยาบาลและหน่วยงานสาธารสุขไทยที่มีแผนด้านการทำ Digital Transformation
+                        สามารถเริ่มต้นเพื่อความสำเร็จในระยะยาวได้ด้วย 3 แนวทางดังนี้ . . .
+                        1. การกำหนดเป้าหมาย ลำดับความสำคัญ และกลยุทธ์ในการทำ Digital Transformation สำหรับปี 2022 นี้
+                        แต่ละโรงพยาบาล และหน่วยงานทาง ด้านสาธารณสุขนั้น ย่อมผ่านการทำ Digital Transformation
+                        กันไปบ้างแล้ว . . .</p>
+                </div>
+               
+                <div>
+                    <a href="/article_digitalTrans">
+                        <h5>READ MORE</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <div class="container" id="kl">
+        <div class="d-flex flex-wrap flex-md-nowrap">
+            <div style="border: solid 10px #EFCB4D; border-radius: 10px;">
+            </div>
+            <div class="col-md-6" id="img-kl">
+                <div><img src="{% static 'images/iot.jpg' %}" alt=""></div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3" style="height:280px ; border-bottom: solid 2px #EFCB4D; overflow: hidden;">
+                    <h4>IoT หรือ Internet of Things คืออะไร</h4>
+                    <br>
+                    <p>การที่อุปกรณ์อิเล็กทรอนิกส์ต่างๆ สามารถเชื่อมโยงหรือส่งข้อมูลถึงกัน ได้ด้วยอินเทอร์เน็ต
+                        โดยไม่ต้องป้อนข้อมูล การเชื่อมโยงนี้ง่ายจนทำให้เรา
+                        สามารถสั่งการควบคุมการใช้งานอุปกรณ์อิเล็กทรอนิกส์ต่างๆ ผ่านทางเครือข่ายอินเตอร์เน็ตได้
+                        ไปจนถึงการเชื่อมโยงการ ใช้งานอุปกรณ์อิเล็กทรอนิกส์ต่างๆ ผ่านทางเครือข่ายอินเตอร์เน็ต
+                        เข้ากับการใช้งานอื่นๆ จนเกิดเป็นบรรดา Smart ต่างๆ . . .</p>
+                </div>
+              
+                <div>
+                    <a href="/article_iot">
+                        <h5>READ MORE</h5>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <br><br>
+
+
+</div>
+
+{% endblock %}

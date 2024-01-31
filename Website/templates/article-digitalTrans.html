@@ -1,0 +1,158 @@
+{% extends 'header.html' %}
+
+{% block content %}
+{% load static %}
+
+<!-- Navbar Zone -->
+<header>
+    <nav id="header-nav" class="navbar navbar-expand-lg navbar-dark ">
+
+        <div class="container-fluid">
+
+            <div class="">
+                <a href="/" class="">
+                    <div id="logo-img" alt="Logo image"></div>
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartlc"
+                aria-controls="navbartlc" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navbartlc" class="collapse navbar-collapse ">
+                <div style="display:flex; flex-direction: column; justify-items: end;" class="ml-auto">
+                    <ul class="navbar-nav ml-auto" id="navitem-up">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/ourcustomers" style="color: #FFFFFF">รายนามลูกค้า |</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/career" style="color: #FFFFFF">ร่วมงานกับเรา</a>
+                        </li>
+                    </ul>
+
+
+                    <ul class="navbar-nav ml-auto" id="navitem-low">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/" style="color:#FFFFFF;">หน้าหลัก&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/aboutus" style="color: #FFFFFF ">เกี่ยวกับเรา&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/productsnservices"
+                                style="color: #FFFFFF">สินค้าและบริการ&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/articles" style="color: #EFCB4D">ข่าวสารและกิจกรรม&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contactus" style="color: #FFFFFF">ติดต่อเรา</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- <a class="hamburger-menu" onclick="myFunction()">
+                    <span class="hamburger-icon"></span>
+                </a> -->
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+<!-- END Navbar -->
+
+<br><br>
+<div class="container" id="backIcon">
+    <a href="/articles"><img src="{% static 'images/IconBigArrow.svg' %}" alt=""></a>
+</div>
+
+<br>
+<section class="container" id="article-dTrans">
+    <div>
+        <h3>โรงพยาบาล และหน่วยงาน สาธารณสุขไทย จะเริ่มต้นทำ Digital Transformation ได้อย่างไร?</h3>
+    </div>
+    <div class="head-pic d-flex">
+        <div style="border:solid 10px #EFCB4D; border-radius: 10px;">
+        </div>
+        <div style="padding:0px 65px;">
+            <img src="{% static 'images/cover2.jpg' %}" alt="">
+        </div>
+    </div>
+    <br>
+    <div>
+        <p>
+            สำหรับโรงพยาบาลและหน่วยงานสาธารสุขไทยที่มีแผนด้านการทำ Digital Transformation
+            สามารถเริ่มต้นเพื่อความสำเร็จในระยะยาวได้ด้วย
+            3 แนวทางดังนี้ . . .</p>
+
+        <h6>1. การกำหนดเป้าหมาย ลำดับความสำคัญ และกลยุทธ์ในการทำ Digital Transformation</h6>
+
+        <p>สำหรับปี 2022 นี้ แต่ละโรงพยาบาลและหน่วยงานทางด้านสาธารณสุขนั้นย่อมผ่านการทำ Digital Transformation
+            กันไปบ้างแล้วไม่มากก็น้อย เพื่อเร่งปรับตัวในช่วงวิกฤตที่ผ่านมา อย่างไรก็ดี ในระยะยาวนั้นการวางแผนด้านการทำ
+            Digital Transformation
+            ให้สอดคล้องต่อเป้าหมายที่แตกต่างกันของแต่ละองค์กรนั้นก็จะกลายเป็นโจทย์สำคัญในการดำเนินงานเป็นเวลา 10
+            ปีนับถัดจากนี้</p>
+
+        <p>สิ่งที่แต่ละองค์กรต้องทำนั้นก็คือการกำหนดเป้าหมายในระยะยาวที่ต้องการ
+            พร้อมจัดลำดับความสำคัญของแต่ละเป้าหมายให้องค์กร มีทิศทางที่ชัดเจนต่อการทำ Digital Transformation
+            และวางแผนการลงทุนให้สอดคล้องต่อช่วงเวลาและงบประมาณที่มี รวมถึงกำหนด กลยุทธ์ในการทำ Digital Transformation
+            ให้เหมาะสมต่อทรัพยากรที่มีอยู่ รวมถึงทำการวางแผนในรายละเอียด ปลีกย่อยสำหรับ
+            แต่ละแผนกเพื่อให้เห็นภาพของการดำเนินโครงการที่แม่นยำ
+            แน่นอนว่าสำหรับหลายโรงพยาบาล การวางแผนด้านการรักษา
+            และติดตามผู้ป่วยระยะไกลให้ได้นั้นย่อมกลายเป็นหนึ่งในเป้าหมายที่จะได้รับความสำคัญสูงสุด
+            เพื่อให้แต่ละแผนกภายในโรงพยาบาลนั้น
+            ยังคงทำการรักษาผู้ป่วยได้อย่างต่อเนื่องไม่ว่าสถานการณ์โรคระบาดจะเป็นอย่างไร
+            ในขณะที่การนำเทคโนโลยีมาใช้เพื่อช่วยลดภาระหน้าที่การ
+            ทำงานของแพทย์และพยาบาลนั้นก็เป็นอีกโจทย์สำคัญที่จะช่วยให้การรับมือกับวิกฤตครั้งนี้เป็นไปได้อย่างต่อเนื่องและมั่นคงมากยิ่งขึ้น
+            ในขณะ ที่การนำอุปกรณ์ IoT หรือ Wearable Device มาใช้ในโรงพยาบาลนั้นก็จะยังคงเป็นสิ่งที่แต่ละโรงพยาบาล
+            หรือแต่ละแผนก ยังคงต้องศึกษาและทดลองกันต่อไป</p>
+
+        <h6>2. การเตรียมระบบ IT Infrastructure และศึกษาโครงข่าย 5G ให้พร้อม</h6>
+
+        <p>การปรับปรุงระบบ IT Infrastructure ขนานใหญ่เพื่อให้รองรับต่อการรักษาในอนาคต และสร้างความเป็นไปได้ในการเปิด
+            โรงพยาบาลสนามหรือจุดรักษาเฉพาะกิจให้ได้อย่างรวดเร็ว และง่ายดายนั้นก็จะยังคงเป็นอีกโจทย์สำคัญ
+            รวมถึงการวางระบบเครือข่าย
+            เพื่อรองรับการรักษาทางไกลในอนาคตที่อาจเปิดให้แพทย์สามารถทำการพูดคุยตรวจรักษาหรือให้คำปรึกษาแก่ผู้ป่วยจากภายนอกโรงพยาบาล
+            ได้นั้นก็จะเป็นสิ่งสำคัญ ทำให้โรงพยาบาลหลายแห่งอาจต้องลงทุนเพิ่มเติมในระบบ Cloud, SD-WAN, Wi-Fi และ Video
+            Conference</p>
+
+        <p>นอกจากนี้ สำหรับโรงพยาบาลที่มีแผนการนำเทคโนโลยี IoT และ Wearable Device มาใช้งานในอนาคต สำหรับสร้าง
+            ความเป็นไปได้ใหม่ๆ ในการติดตามและรักษาผู้ป่วย หรือการวางระบบ Smart Hospital การศึกษาแนวทางการนำ 5G
+            ในรูปแบบต่างๆ
+            มาใช้เพื่อทำความเข้าใจถึงศักยภาพที่แตกต่างกันออกไป และเลือกใช้งาน 5G ในแต่ละโครงการได้อย่างเหมาะสม
+            ทั้งสำหรับการใช้งานภายในโรงพยาบาลและการติดตามผู้ป่วยถึงที่บ้านนั้นก็เป็นอีกสิ่งจำเป็นที่ต้องเร่งดำเนินการในปี
+            2022 นี้</p>
+
+        <h6>3. การวางแผนเตรียมบุคลากรให้พร้อม</h6>
+
+        <p>สุดท้าย การวางแผนด้านบุคลากรนั้นก็ถือเป็นหัวใจสำคัญในการทำให้โครงการ Digital Transformation ใดๆ
+            ประสบความสำเร็จได้ ซึ่งท่ามกลางภาวะที่บุคลากรทางการแพทย์กำลังขาดแคลนอยู่นี้ ก็ได้ทวีความกดดัน
+            ให้กับโรงพยาบาล
+            และหน่วยงานสาธารณสุขเป็นอย่างมาก</p>
+
+        <p>ด้วยเหตุนี้ นอกจากการวางแผนเพื่อเสริมทักษะให้กับบุคลากรภายในองค์กรในการดำเนินโครงการแล้ว การมองหา Partner
+            ที่มีความพร้อมอย่างเช่น AIS Business เข้ามาช่วยก็จะเป็นอีกปัจจัยที่จะช่วยให้โครงการด้านการทำ Digital
+            Transformation ประสบความสำเร็จได้มากขึ้น รวมถึงการเปิดรับบุคลากรในตำแหน่งใหม่ๆ
+            ที่มีความเชี่ยวชาญเฉพาะด้านทางด้านดิจิทัลเข้ามาเสริม ก็จะช่วยให้การปรับเปลี่ยนนำเทคโนโลยีมาใช้
+            และเรียนรู้สิ่งใหม่ๆ เป็นไปได้อย่างคล่องตัวมากยิ่งขึ้นกว่าเดิม</p>
+
+
+
+        <p>ติดตาม Smart Digital Insights สรรสาระแห่งเทคโนโลยี จาก AIS Business
+            ได้ที่: <a
+                href="https://business.ais.co.th/smart-digital-insights/">https://business.ais.co.th/smart-digital-insights/</a>
+        </p><br>
+
+    </div>
+
+    <br><br>
+</section>
+<br><br>
+
+
+
+{% endblock %}

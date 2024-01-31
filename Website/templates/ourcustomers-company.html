@@ -1,0 +1,229 @@
+{% extends 'header.html' %}
+
+{% block content %}
+{% load static %}
+
+<!-- Navbar Zone -->
+<header>
+    <nav id="header-nav" class="navbar navbar-expand-lg navbar-dark ">
+
+        <div class="container-fluid">
+
+            <div class="">
+                <a href="/" class="">
+                    <div id="logo-img" alt="Logo image"></div>
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartlc"
+                aria-controls="navbartlc" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navbartlc" class="collapse navbar-collapse ">
+                <div style="display:flex; flex-direction: column; justify-items: end;" class="ml-auto">
+                    <ul class="navbar-nav ml-auto" id="navitem-up">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/ourcustomers" style="color: #EFCB4D">รายนามลูกค้า |</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/career" style="color: #FFFFFF">ร่วมงานกับเรา</a>
+                        </li>
+                    </ul>
+
+
+                    <ul class="navbar-nav ml-auto" id="navitem-low">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/" style="color:#FFFFFF;">หน้าหลัก&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/aboutus" style="color: #FFFFFF ">เกี่ยวกับเรา&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/productsnservices"
+                                style="color: #FFFFFF">สินค้าและบริการ&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/articles" style="color:#FFFFFF ">ข่าวสารและกิจกรรม&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contactus" style="color: #FFFFFF">ติดต่อเรา</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- <a class="hamburger-menu" onclick="myFunction()">
+                    <span class="hamburger-icon"></span>
+                </a> -->
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+<!-- END Navbar -->
+
+
+<br>
+<div class="contianer" id="customers-head">
+    <h1>รายนามลูกค้า</h1>
+</div>
+<br>
+<div id="customers-nav">
+    <ul class="nav" id="">
+        <li class="nav-item active">
+            <a class="nav-link" href="/ourcustomers">ทั้งหมด</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/ourcustomers_company" style="color:#364969;">หน่วยงานเอกชน</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/ourcustomers_stateSector">หน่วยงานราชการ</a>
+        </li>
+    </ul>
+</div>
+
+
+<div class="container" id="customers-logo" style="margin-top: 30px; margin-bottom: 35px;">
+    <div class="list-group list-group-horizontal">
+        <a target="_blank" href="https://www.phyathai.com/th"
+            class="list-group-item list-group-item-action">โรงพยาบาลพญาไท</a>
+        <a target="_blank" href="https://www.praram9.com/"
+            class="list-group-item list-group-item-action">โรงพยาบาลพระราม 9</a>
+        <a target="_blank" href="https://www.bnhhospital.com/th/"
+            class="list-group-item list-group-item-action">โรงพยาบาลบีเอ็นเอช</a>
+
+    </div>
+
+    <div class="list-group list-group-horizontal">
+        <a target="_blank" href="https://www.rama.mahidol.ac.th/cnmi/"
+            class="list-group-item list-group-item-action">โรงพยาบาลรามาธิบดีจักรีนฤบดินทร์</a>
+        <a target="_blank" href="https://www.thonburihospital.com/"
+            class="list-group-item list-group-item-action">โรงพยาบาลธนบุรี</a>
+        <a target="_blank" href="https://www.thonburibamrungmuang.com/th/home"
+            class="list-group-item list-group-item-action">โรงพยาบาลธนบุรี บำรุงเมือง</a>
+    </div>
+
+    <div class="list-group list-group-horizontal">
+        <a target="_blank" href="https://www.samitivejhospitals.com/th"
+            class="list-group-item list-group-item-action">โรงพยาบาลสมิติเวช</a>
+        <a target="_blank" href="https://www.samitivejchonburi.com/th/index.html"
+            class="list-group-item list-group-item-action">โรงพยาบาลสมิติเวช ชลบุรี</a>
+        <a target="_blank" href="https://www.samitivejsriracha.com/"
+            class="list-group-item list-group-item-action">โรงพยาบาลสมิติเวช ศรีราชา</a>
+
+    </div>
+
+    <div class="list-group list-group-horizontal">
+        <a target="_blank" href="https://www.bangkokhospitalmuangraj.com/"
+            class="list-group-item list-group-item-action">โรงพยาบาลกรุงเทพเมืองราช</a>
+        <a target="_blank" href="https://www.health-plaza.com/shop/bangkokhospitaltrat"
+            class="list-group-item list-group-item-action">โรงพยาบาลกรุงเทพตราด</a>
+        <a target="_blank" href="https://bangkokhospitalchanthaburi.com/"
+            class="list-group-item list-group-item-action">โรงพยาบาลกรุงเทพจันทบุรี</a>
+    </div>
+
+    <div class="list-group list-group-horizontal">
+        <a target="_blank" href="https://www.bangkokhospitalrayong.com/"
+            class="list-group-item list-group-item-action">โรงพยาบาลกรุงเทพระยอง</a>
+        <a target="_blank" href="https://www.bkh.co.th/"
+            class="list-group-item list-group-item-action">โรงพยาบาลกรุงเทพราชสีมา</a>
+        <a target="_blank" href="https://www.pitsanuvej.com/"
+            class="list-group-item list-group-item-action">โรงพยาบาลพิษณุเวช</a>
+    </div>
+
+    <div class="list-group list-group-horizontal">
+        <a target="_blank" href="https://www.pitsanuvejuttaradit.com/"
+            class="list-group-item list-group-item-action">โรงพยาบาลพิษณุเวช อุตรดิตถ์</a>
+        <a target="_blank" href="https://www.pitsanuvejphichit.com/"
+            class="list-group-item list-group-item-action">โรงพยาบาลพิษณุเวช พิจิตร</a>
+        <a target="_blank" href="https://princpaknampo.com/"
+            class="list-group-item list-group-item-action">โรงพยาบาลพริ้นซ์
+            ปากน้ำโพ</a>
+    </div>
+
+    <div class="list-group list-group-horizontal">
+        <a target="_blank" href="https://www.princsuvarnabhumi.com/"
+            class="list-group-item list-group-item-action">โรงพยาบาลพริ้นซ์ สุวรรณภูมิ</a>
+        <a class="col-md-4"></a>
+        <a class="col-md-4"></a>
+    </div>
+</div>
+
+<!-- <div class="container" id="customers-logo">
+    <div class="row">
+        <div class="col-md-4 col-sm-6" id="logo">
+            <img src="{% static 'images/payathai.jpg' %}">
+        </div>
+        <div class="col-md-4 col-sm-6" id="logo">
+            <img src="{% static 'images/praram9.png' %}">
+        </div>
+        <div class="col-md-4 col-sm-6" id="logo">
+            <img src="{% static 'images/BNH.png' %}">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-sm-6" id="logo">
+            <img src="{% static 'images/CNMI.svg' %}" >
+        </div>
+        <div class="col-md-4 col-sm-6" id="logo">
+            <img src="{% static 'images/thonburi_bam.png' %}" >
+        </div>
+        <div class="col-md-4 col-sm-6" id="logo">
+            <img src="{% static 'images/thonburi.png' %}">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-sm-6" id="logo">
+            <img src="{% static 'images/samitivej.jpg' %}">
+        </div>
+        <div class="col-md-4 col-sm-6" id="logo">
+            <img src="{% static 'images/samitivej_sriracha.png' %}" style="width:120%;">
+        </div>
+        <div class="col-md-4 col-sm-6" id="logo">
+            <img src="{% static 'images/samitivej_chonburi.jpg' %}">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col" id="logo-5">
+            <img src="{% static 'images/bkk_raj.jpg' %}">
+        </div>
+        <div class="col" id="logo-5">
+            <img src="{% static 'images/bkk_trat.jpg' %}">
+        </div>
+        <div class="col" id="logo-5">
+            <img src="{% static 'images/bkk_chan.jpg' %}">
+        </div>
+        <div class="col" id="logo-5">
+            <img src="{% static 'images/bkk_rayong.jpg' %}">
+        </div>
+        <div class="col" id="logo-5">
+            <img src="{% static 'images/bkk_rajchasima.jpg' %}">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col" id="logo-5">
+            <img src="{% static 'images/pitsana.jpg' %}">
+        </div>
+        <div class="col" id="logo-5">
+            <img src="{% static 'images/uttaradit.jpg' %}">
+        </div>
+        <div class="col" id="logo-5">
+            <img src="{% static 'images/pijit.jpg' %}">
+        </div>
+        <div class="col" id="logo-5">
+            <img src="{% static 'images/paknampo.jpg' %}">
+        </div>
+        <div class="col" id="logo-5">
+            <img src="{% static 'images/suvarnabhum.jpg' %}">
+        </div>
+    </div>
+</div> -->
+<br>
+{% endblock %}

@@ -1,0 +1,128 @@
+{% extends 'header.html' %}
+
+{% block content %}
+{% load static %}
+
+<!-- Navbar Zone -->
+<header>
+    <nav id="header-nav" class="navbar navbar-expand-lg navbar-dark ">
+
+        <div class="container-fluid">
+
+            <div class="">
+                <a href="/" class="">
+                    <div id="logo-img" alt="Logo image"></div>
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartlc"
+                aria-controls="navbartlc" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navbartlc" class="collapse navbar-collapse " >
+                <div style="display:flex; flex-direction: column; justify-items: end;" class="ml-auto">
+                    <ul class="navbar-nav ml-auto" id="navitem-up">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/ourcustomers" style="color: #FFFFFF">รายนามลูกค้า |</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/career" style="color: #EFCB4D">ร่วมงานกับเรา</a>
+                        </li>
+                    </ul>
+
+
+                    <ul class="navbar-nav ml-auto" id="navitem-low">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/" style="color:#FFFFFF;">หน้าหลัก&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/aboutus" style="color: #FFFFFF ">เกี่ยวกับเรา&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/productsnservices"
+                                style="color: #FFFFFF">สินค้าและบริการ&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/articles" style="color:#FFFFFF ">ข่าวสารและกิจกรรม&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contactus" style="color: #FFFFFF">ติดต่อเรา</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- <a class="hamburger-menu" onclick="myFunction()">
+                    <span class="hamburger-icon"></span>
+                </a> -->
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+<!-- END Navbar -->
+
+    <br><br>
+    <div class="container" id="backIcon">
+        <a href="/career"><img src="{% static 'images/IconBigArrow.svg' %}" alt=""></a>
+    </div>
+
+    <br>
+    <section class="container" id="career-details">
+        <p>
+            ตำแหน่ง
+        <ul>
+            <li>
+                เจ้าหน้าที่การตลาด จำนวน 1 อัตรา
+            </li>
+        </ul>
+        <br>
+        เงินเดือน
+        <ul>
+            <li>ตามโครงการบริษัท</li>
+        </ul>
+        <br>
+        สถานที่ปฏิบัติงาน
+        <ul>
+            <li>บริษัท เทเลคอร์ป จำกัด เลขที่ 216/52 มบ.ซิตี้ลิงค์ ถ.คู่ขนานกาญจนาภิเษก
+                แขวงสะพานสูง เขตสะพานสูง กรุงเทพฯ 10250</li>
+        </ul>
+
+        คุณสมบัติ
+        <ul>
+            <li>ชาย/หญิง อายุ 21-35 ปี</li>
+            <li>ประสบการณ์การทำงาน 1 ปี</li>
+            <li>วุฒิการศึกษา ปริญญาตรี/ปริญญาโท สาขาบริหารธุรกิจ, การตลาด, บัญชี, IT, หรือสาขาที่เกี่ยวข้อง</li>
+            <li>มีความสามารถในการบริหารจัดการงานหลายด้านได้ในเวลาที่รวดเร็ว ภายใต้สภาวะการแข่งขันสูง</li>
+            <li>มีทักษะการวางแผน และความสามารถในการวิเคราะห์ คิดอย่างเป็นระบบ</li>
+            <li>สามารถสื่อสารได้ดี และทำงานร่วมกันเป็นทีมได้</li>
+            <li>พร้อมเรียนรู้สิ่งใหม่ๆ และพัฒนาตนเองอยุ่เสมอ ไม่เกี่ยงงานที่ได้รับมอบหมาย</li>
+            <li>มีความรับผิดชอบสูง ขยัน อดทน สามารถรับแรงกดดันในการทำงานได้ดี</li>
+        </ul>
+
+        <br>
+        สวัสดิการ
+        <ul>
+            <li>ปรับเงินเดือนประจำปี (ตามผลงานและผลประกอบการ)</li>
+            <li>วันลาตามกฏหมายแรงงาน</li>
+            <li>วันหยุดตามประเพณี (ไม่ต่ำกว่า 13 วัน)</li>
+            <li>วันหยุดพักผ่อนประจำปี (พักร้อน) 6-14 วัน (ตามอายุงาน)</li>
+            <li>ประกันสังคม</li>
+        </ul>
+
+        <br>
+        วิธีการสมัคร
+        <ul>
+            <li>สมัครด้วยตัวเอง ทุกวันจันทร์-ศุกร์ เวลา 09.00 - 17.00 น.</li>
+            <li>ส่งใบสมัครตามที่อยู่ คลิกดาวน์โหลดเอกสาร</li>
+            <li>โทรสอบถาม : 0969266020</li>
+           
+        </ul>
+        </p>
+    </section>
+<br><br>
+
+{% endblock %}

@@ -1,0 +1,523 @@
+{% extends 'header.html' %}
+
+{% block content %}
+{% load static %}
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
+</style>
+
+<style>
+    .owl-carousel .owl-nav {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 100%;
+        top: calc(50% - 25px);
+
+    }
+
+    div.owl-carousel .owl-nav .owl-prev,
+    div.owl-carousel .owl-nav .owl-next {
+        font-size: 50px;
+        top: unset;
+        bottom: 15px;
+        color: #364969;
+    }
+
+    .owl-carousel .owl-dots {
+        visibility: hidden;
+    }
+
+    .owl-stage-outer {
+        padding-top: 250px;
+        padding-bottom: 150px;
+
+    }
+</style>
+
+
+
+
+<!-- Navbar Zone -->
+<header>
+    <nav id="header-nav" class="navbar navbar-expand-lg navbar-dark ">
+
+        <div class="container-fluid">
+
+            <div class="">
+                <a href="/" class="">
+                    <div id="logo-img" alt="Logo image"></div>
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartlc"
+                aria-controls="navbartlc" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navbartlc" class="collapse navbar-collapse ">
+                <div style="display:flex; flex-direction: column; justify-items: end;" class="ml-auto">
+                    <ul class="navbar-nav ml-auto" id="navitem-up">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/ourcustomers" style="color: #FFFFFF">รายนามลูกค้า |</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/career" style="color: #FFFFFF">ร่วมงานกับเรา</a>
+                        </li>
+                    </ul>
+
+
+                    <ul class="navbar-nav ml-auto" id="navitem-low">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/" style="color:#FFFFFF;">หน้าหลัก&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/aboutus" style="color: #EFCB4D ">เกี่ยวกับเรา&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/productsnservices"
+                                style="color: #FFFFFF">สินค้าและบริการ&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/articles" style="color: #FFFFFF">ข่าวสารและกิจกรรม&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contactus" style="color: #FFFFFF">ติดต่อเรา</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- <a class="hamburger-menu" onclick="myFunction()">
+                    <span class="hamburger-icon"></span>
+                </a> -->
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+<!-- END Navbar -->
+
+
+<!-- <aboutus content page> -->
+<section>
+    <div class="container">
+        <div class="d-flex flex-wrap flex-lg-nowrap" style="padding-top:50px">
+            <div class="" id="abtus-content">
+                <br>
+                <h1>ABOUT US</h1><br>
+                <p>บริษัท เทเลคอร์ป จำกัด ประกอบธุรกิจและดำเนินงานด้านเทคโนโลยีสารสนเทศ
+                    เราเริ่มต้นจากการพัฒนาโปรแกรมที่ใช้ในโรงพยาบาล และโปรแกรมคลินิก โดยเน้นการใช้เทคโนโลยีที่ทันสมัย
+                    ใช้งานง่ายไม่ซับซ้อน และช่วยเพิ่มประสิทธิภาพการทำงานของผู้ใช้งาน </p>
+
+                <p>ด้วยทีมงานที่มีประสบการณ์ในการคิดค้นพัฒนาซอร์ฟแวร์ และการทำงานอย่างมืออาชีพ
+                    ทำให้เราเป็นที่ไว้วางใจจากลูกค้าเพิ่มมากขึ้น
+                    จนกระทั่งบริษัทได้ขยายการดำเนินงานด้านเทคโนโลยีสารสนเทศ และให้บริการลูกค้าได้อย่างครบวงจร
+                    ตั้งแต่การพัฒนาระบบคิวที่ออกแบบเฉพาะสำหรับโรงพยาบาล( DASH QUEUE)
+                    การออกแบบโปรแกรมบริหารจัดการแผนกตรวจสุขภาพครบวงจร (H-SERIES)
+                    การพัฒนาโปรแกรมตามความต้องการของลูกค้ากลุ่มโรงพยาบาล และทั่วไป การพัฒนาและออกแบบเว็บไซต์
+                    การออกแบบ วางระบบสารสนเทศ รวมไปถึงการจำหน่ายผลิตภัณฑ์คอมพิวเตอร์ต่างๆ
+                    พร้อมทั้งเป็นที่ปรึกษาระบบงานด้านคอมพิวเตอร์อีกด้วย</p>
+
+                <p>ตลอดระยะเวลาที่ผ่านมา ทีมงานทุกคนมีความมุ่งมั่นในการพัฒนางาน เพื่อให้ ลูกค้าที่ไว้วางใจใน “
+                    เทเลคอร์ป “ ได้รับมอบผลงานที่มีประสิทธิภาพอย่างสูงสุด และจะยังคง มุ่งมั่นพัฒนา แบรนด์ของเรา
+                    ให้ยั่งยืนต่อไป</p>
+
+            </div>
+
+            <div class="" id="img-sildes">
+                <div class="owl-carousel owl-theme" id="abtus-pics" style="transform: rotate(270deg);
+               width: 608px; ">
+                    <img class="item" src="{% static 'images/us4.jpg' %}" alt="">
+                    <img class="item" src="{% static 'images/us2.jpg' %}" alt="">
+                    <img class="item" src="{% static 'images/us1.jpg' %}" alt="">
+                    <img class="item" src="{% static 'images/us3.jpg' %}" alt="">
+                    <img class="item" src="{% static 'images/us5.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="" id="mid-part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12" id="col1">
+                    <div class="col" id="card">
+                        <img src="{% static 'images/1.png' %}" alt="">
+                        <div class="card-body"><br>
+                            <h4>ระบบใช้งานง่ายทุกขั้นตอน</h4>
+                            <p class="card-text">ด้วยการออกแบบ และวิเคราะห์ระบบ
+                                เพื่อความสะดวกในการใช้งาน
+                                ให้การใช้งานง่ายที่สุด</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12" id="col2">
+                    <div class="col" id="card">
+                        <img src="{% static 'images/2.png' %}" alt="">
+                        <div class="card-body"><br>
+                            <h4>ออกแบบหน้าจอที่ทันสมัย</h4>
+                            <p class="card-text">การออกแบบหน้าจอให้ทันกับยุคสมัย</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12" id="col3">
+                    <div class="col" id="card">
+                        <img src="{% static 'images/3.png' %}" alt="">
+                        <div class="card-body"><br>
+                            <h4>ใช้งานได้กับทุกขนาดหน้าจอ</h4>
+                            <p class="card-text">การออกแบบที่ตอบสนอง
+                                กับทุกขนาดหน้าจอ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- History Sector -->
+    <section id="history-sector">
+        <!-- Yellow-Nav -->
+        <div class="" id="yellow-nav">
+            <div class="container">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap">
+                    <div class="" id="title1">
+                        <a href="#history-sector" onclick="show1()" class="btn btn-outline-light btn-lg"> ประวัติ</a>
+                    </div>
+
+                    <div class="" id="title2">
+                        <a href="#vision-sector" onclick="show2()">วิสัยทัศน์</a>
+                    </div>
+
+                    <div class="" id="title3">
+                        <a href="#philosophy-sector" onclick="show3()">ปรัชญาในการดำเนินธุรกิจ</a>
+                    </div>
+
+                    <div class="" id="title4">
+                        <a href="#goal-sector" onclick="show4()">เป้าหมาย</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="history">
+            <div class="row">
+                <div class="col-md-6 col-sm-12" id="img-history">
+                    <img src="{% static 'images/Frame20.png' %}" alt="">
+                </div>
+
+                <div class="col-md-6 col-sm-12" id="content-history">
+                    <p>
+                        <span>บริษัท เทเลคอร์ป</span> เริ่มประกอบธุรกิจ และดำเนินงานด้านเทคโนโลยีสารสนเทศ
+                        เริ่มต้นจากการพัฒนา
+                        ซอฟต์แวร์โรงพยาบาล และคลินิก โดยเน้นเทคโนโลยีที่ทันสมัย
+                        และความสะดวกในการใช้งานอย่างมีประสิทธิภาพ ด้วยทีมงานที่มีประสบการณ์ในการคิดค้น และพัฒนาซอฟต์แวร์
+                        ทำให้เป็นที่ไว้วางใจจากลูกค้าเพิ่มมากขึ้น
+                    </p>
+                    <p>
+                        จนกระทั่งบริษัทได้ขยายการดำเนินงานด้านเทคโนโลยีสารสนเทศ และให้บริการลูกค้าได้อย่างครบวงจร
+                        ตั้งแต่การออกแบบ วางระบบสารสนเทศ พัฒนาระบบคอมพิวเตอร์ตามความต้องการ การออกแบบเว็บไซต์
+                        จำหน่ายผลิตภัณฑ์คอมพิวเตอร์ต่าง ๆ พร้อมทั้งเป็นที่ปรึกษาระบบงานด้านคอมพิวเตอร์อีกด้วย
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Vision Sector -->
+    <section id="vision-sector">
+        <!-- Yellow-Nav -->
+        <div class="" id="yellow-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12" id="title5">
+                        <a href="#history-sector" onclick="show1()"> ประวัติ</a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-12" id="title6">
+                        <a href="#vision-sector" onclick="show2()" class="btn btn-outline-light btn-lg">วิสัยทัศน์</a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-12" id="title7">
+                        <a href="#philosophy-sector" onclick="show3()">ปรัชญาในการดำเนินธุรกิจ</a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-12" id="title8">
+                        <a href="#goal-sector" onclick="show4()">เป้าหมาย</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="history">
+            <div class="row">
+                <div class="col-md-6 col-sm-12" id="content-vision">
+                    <p>
+                        คิดค้นและพัฒนาซอฟต์แวร์เฉพาะด้านการแพทย์
+                        โดยเน้นถึงเทคโนโลยีที่ทันสมัยและความสะดวกในการใช้งานจริง
+                        เพื่อนำมาพัฒนาประสิทธิภาพในการใช้งานให้สูงขึ้น
+                        จึงทำให้เกิดซอฟต์แวร์บริหารและจัดการข้อมูลสารสนเทศ ในโรงพยาบาลที่มีประสิทธิภาพ
+                    </p>
+                </div>
+
+                <div class="col-md-6 col-sm-12" id="img-vision">
+                    <img src="{% static 'images/Frame21.png' %}" alt="">
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Philosophy Sector -->
+    <section id="philosophy-sector">
+        <!-- Yellow-Nav -->
+        <div class="" id="yellow-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12" id="title9">
+                        <a href="#history-sector" onclick="show1()"> ประวัติ</a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-12" id="title10">
+                        <a href="#vision-sector" onclick="show2()">วิสัยทัศน์</a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12" id="title11">
+                        <a href="#philosophy-sector" onclick="show3()"
+                            class="btn btn-outline-light btn-lg">ปรัชญาในการดำเนินธุรกิจ</a>
+                    </div>
+
+                    <div class="col-md-2 col-sm-6 col-xs-12" id="title12">
+                        <a href="#goal-sector" onclick="show4()">เป้าหมาย</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="" id="philosophy1">
+            <br><br>
+            <div id="philosophy-1-1">
+                <h4>มุ่งมั่นในความเป็นเลิศ</h4>
+            </div>
+            <div id="bg1" style="position:relative">
+                <div id="philosophy-1-2">
+
+                    <p>"บริษัทฯ
+                        มีความชัดเจนในการดำเนินธุรกิจโดยมุ่งมั่นสู่ความเป็นเลิศด้านวิศวกรรม
+                        กระทำทุกอย่างด้วยความตั้งใจให้เกิดผลในทางที่ดีกว่าเสมอด้วยการศึกษา วิจัย และปรับปรุงสิ่งต่าง
+                        ๆ
+                        ให้ดียิ่งขึ้นไปกว่าเดิมเหมาะสมกับสถานการณ์
+                        ด้วยพื้นฐานความที่เชื่อว่าเราทำได้และทำด้วยความรู้
+                        อย่างต่อเนื่อง อันเป็นความพยายามอย่างไม่มีที่สิ้นสุด ที่ต้องพัฒนาองค์กรไปสู่ความเป็นเลิศ"
+
+                    </p>
+                </div>
+                <div id="number1" style="position: absolute; bottom:-60px; right:45%;">
+                    <span>1</span>
+                </div>
+            </div>
+
+        </div>
+        <br>
+
+        <div  id="philosophy2">
+            <div class="d-flex justify-content-end">
+                <div class="" id="philosophy-2-1">
+                    <h4>ยึดมั่นในคุณภาพสินค้าและบริการ</h4>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-end" style="position:relative;">
+                <div id="bg2" >
+                    <div  id="philosophy-2-2">
+                        <p>"บริษัทฯ ขายสินค้าและให้บริการ โดยคำนึงถึงความพึงพอใจสูงสุดของลูกค้า
+                            ด้วยการฝังแนวคิดด้านการรับประกันคุณภาพว่าความสำเร็จของลูกค้าคือความสำเร็จของเรา
+                            และลูกค้าจะต้องยินดีพึงพอใจมากกว่าสิ่งที่ที่ได้จ่ายเสมอ ความดูแลเอาใจใส่พิถีพิถัน
+                            ในทุกขั้นตอนต้องได้รับการตรวจสอบปรับปรุงให้มีความทันสมัย
+                            ตอบสนองให้ตรงความต้องการของลูกค้าอยู่เสมอ มีระบบติดตามให้บริการที่ดีแก่ลูกค้า ทั้งบริการก่อนขาย
+                            ระหว่างการขาย และหลังการขาย ส่งมอบสินค้าตรงตามกำหนดเวลา ด้วยความรับผิดชอบ
+                            และที่สำคัญทุกกิจกรรมจะต้องดำเนินการอย่างมีความรู้ เพื่อนำไปสู่การพัฒนาอย่างยั่งยืนต่อไป"
+                        </p>
+                    </div>
+                </div>
+                <div id="number2" style="position:absolute; bottom:-60px; right:50%">
+                    <span>2</span>
+                </div>
+            </div>
+         
+
+        </div>
+        <br>
+        <div id="philosophy3"  style="position:relative;">
+            <div class="" id="philosophy-3-1">
+                <h4>เชื่อมั่นในคุณค่าของบุคลากร</h4>
+            </div>
+            <div id="bg3">
+                <div class="" id="philosophy-3-2">
+                    <p>
+                        "บริษัทฯ ให้ความสำคัญแก่พนักงานทุกระดับและทุกคน ด้วยพื้นฐานที่เชื่อว่า พนักงานที่ดีมี คุณภาพ
+                        จะนำมาซึ่งความสำเร็จขององค์กร จึงมุ่งเน้นสรรหาคัดเลือกพนักงานที่จะมาร่วมงาน อย่างพิถีพิถัน
+                        ดูแลให้สวัสดิการค่าตอบแทนที่เหมาะสมและเป็นธรรม พัฒนาและฝึกอบรม ส่งเสริมการศึกษา
+                        และการหาความรู้เพิ่มเติมของพนักงานอย่างต่อเนื่อง ตลอดจนส่งเสริมให้มีคุณภาพชีวิตการทำงาน
+                        ที่ดีมีสุขอนามัยและความปลอดภัยในการทำงาน อันจะเป็นประโยชน์แก่พนักงาน บริษัทฯ และสังคมโดยส่วนรวม"
+                    </p>
+                </div>        
+            </div>
+            <div id="number3" style="position:absolute; bottom:-60px; left: 50%;">
+                <span>3</span>
+            </div>
+        </div>
+        <br>
+        <div id="philosophy4" style="position:relative">
+            <div class="container" id="philosophy-4-1">
+                <h4>ตั้งมั่นในคุณธรรมและจริยธรรม</h4>
+            </div>
+            <div class="container" id="bg4">
+                <div class="" id="philosophy-4-2">
+                    <p>
+                        "บริษัทฯ มีเจตนารมณ์อันแน่วแน่ที่จะดำเนินธุรกิจอย่างมีคุณธรรมและจริยธรรม แบบวิถีพุทธ
+                        อันเป็นวิถีทางการดำเนินธุรกิจที่ดี ด้วยความซื่อสัตย์ต่อตนเองและผู้อื่น ด้วยความเชื่อว่า คุณธรรม
+                        และจริยธรรมในการดำเนินธุรกิจ จะช่วยสร้างความเป็นธรรม สร้างสังคมที่สงบสุข
+                        นำประเทศชาติให้มั่นคงและเจริญก้าวหน้า ส่งผลให้ธุรกิจเติบโต และเจริญรุ่งเรืองอย่างถาวร
+                        โดยจะดำเนินธุรกิจอย่างมีความรับผิดชอบโปร่งใส และยุติธรรม ต่อบุคคลทุกกลุ่มอย่างเหมาะสมและเป็นธรรม
+                        อาทิ ผู้ถือหุ้น ผู้ลงทุน คู่ค้า เจ้าหนี้ คู่แข่ง พนักงาน รัฐบาล ชุมชน และสังคม เป็นต้น"
+                    </p>
+                </div>
+
+            </div>
+            <div id="number4" style="position:absolute; bottom: -60px; right:50%;">
+                <span>4</span>
+            </div>
+        </div>
+        <br>
+        <div class="mb-4" id="philosophy5" style="position:relative;">
+            <div class="" id="philosophy-5-1">
+                <h4>ถือมั่นในความรับผิดชอบต่อสังคมและสิ่งแวดล้อม</h4>
+            </div>
+            <div class="container" id="bg5">
+                <div class="" id="philosophy-5-2">
+                    <p>
+                        "บริษัทฯ ให้ความสำคัญต่อสังคมและสิ่งแวดล้อม เพราะธุรกิจเป็นหน่วยหนึ่งของสังคม
+                        การเปลี่ยนแปลงของสังคมย่อมกระทบต่อธุรกิจ การที่คนในสังคมจะมีคุณภาพชีวิตที่ดี
+                        ก็จะต้องอยู่ในสภาพแวดล้อมที่ดีด้วยพื้นฐานความเชื่อที่ว่า ธุรกิจ สังคม และสิ่งแวดล้อม
+                        เป็นสิ่งที่จะต้องพัฒนาควบคู่กันไป เพื่อให้การดำเนินธุรกิจเป็นไปอย่างยั่งยืน บริษัทฯ
+                        ถือว่าเป็นหน้าที่และความรับผิดชอบในอันที่จะมีส่วนร่วมสร้างสรรค์ สังคม สิ่งแวดล้อม
+                        โดยมีการรับและการให้อย่างสมดุล และจะดำเนินการในทุกทางให้เกิดผลบรรลุตามวัตถุประสงค์"
+                    </p>
+                </div>
+            </div>
+            <div id="number5" style="position:absolute; bottom:-60px; left:50%;">
+                <span>5</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Goal Sector -->
+    <section id="goal-sector">
+        <!-- Yellow-Nav -->
+        <div class="" id="yellow-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12" id="title13">
+                        <a href="#history-sector" onclick="show1()"> ประวัติ</a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-12" id="title14">
+                        <a href="#vision-sector" onclick="show2()">วิสัยทัศน์</a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-12" id="title15">
+                        <a href="#philosophy-sector" onclick="show3()">ปรัชญาในการดำเนินธุรกิจ</a>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-12" id="title16">
+                        <a href="goal-sector" onclick="show4()" class="btn btn-outline-light btn-lg">เป้าหมาย</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="history">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 pb-4" id="img-goal">
+                    <img src="{% static 'images/Frame22.png' %}" alt="">
+                </div>
+
+                <div class="col-md-6 col-sm-12 d-flex justify-content-center" id="content-goal">
+
+                    <img src="{% static 'images/IconGoal.svg' %}" class="align-self-center" alt="">
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+</section>
+
+
+
+<script>
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            items: 2,
+            loop: true,
+            mouseDrag: false,
+            touchDrag: false,
+            pullDrag: false,
+            rewind: true,
+            autoplay: true,
+            margin: 0,
+            nav: true
+        });
+
+        $('#vision-sector').hide();
+        $('#philosophy-sector').hide();
+        $('#goal-sector').hide();
+    });
+
+    function show1() {
+        $("#history-sector").show();
+        $("#vision-sector").hide();
+        $("#philosophy-sector").hide();
+        $("#goal-sector").hide();
+    }
+    function show2() {
+        $("#vision-sector").show();
+        $("#history-sector").hide();
+        $("#philosophy-sector").hide();
+        $("#goal-sector").hide();
+    }
+    function show3() {
+        $("#vision-sector").hide();
+        $("#history-sector").hide();
+        $("#philosophy-sector").show();
+        $("#goal-sector").hide();
+    }
+    function show4() {
+        $("#vision-sector").hide();
+        $("#history-sector").hide();
+        $("#philosophy-sector").hide();
+        $("#goal-sector").show();
+    }
+</script>
+
+{% endblock %}

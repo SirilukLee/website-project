@@ -1,0 +1,124 @@
+{% extends 'header.html' %}
+
+{% block content %}
+{% load static %}
+
+<!-- Navbar Zone -->
+<header>
+    <nav id="header-nav" class="navbar navbar-expand-lg navbar-dark ">
+
+        <div class="container-fluid">
+
+            <div class="">
+                <a href="/" class="">
+                    <div id="logo-img" alt="Logo image"></div>
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartlc"
+                aria-controls="navbartlc" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navbartlc" class="collapse navbar-collapse " >
+                <div style="display:flex; flex-direction: column; justify-items: end;" class="ml-auto">
+                    <ul class="navbar-nav ml-auto" id="navitem-up">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/ourcustomers" style="color: #FFFFFF">รายนามลูกค้า |</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/career" style="color: #FFFFFF">ร่วมงานกับเรา</a>
+                        </li>
+                    </ul>
+
+
+                    <ul class="navbar-nav ml-auto" id="navitem-low">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/" style="color:#FFFFFF;">หน้าหลัก&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/aboutus" style="color: #FFFFFF ">เกี่ยวกับเรา&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/productsnservices"
+                                style="color: #EFCB4D">สินค้าและบริการ&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/articles" style="color: #FFFFFF">ข่าวสารและกิจกรรม&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contactus" style="color: #FFFFFF">ติดต่อเรา</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- <a class="hamburger-menu" onclick="myFunction()">
+                    <span class="hamburger-icon"></span>
+                </a> -->
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+<!-- END Navbar -->
+
+<div class="container" id="application">
+    <h1> APPLICATION BY TELECORP</h1>
+</div>
+</div>
+<br><br>
+<div class="container" id="product-content">
+    <div class="row">
+        <div class="col-md-6">
+            <div id="h-series">
+                <a href="/h_series" target="_blank"><img src="{% static 'images/Frame10.png' %}" alt=""></a>
+
+            </div>
+            <br><br>
+            <div id="item-see">
+                <img src="{% static 'images/Frame12.png' %}" alt="">
+
+            </div>
+            <br><br>
+            <div id="website">
+                <img src="{% static 'images/Frame13.png' %}" alt="">
+
+            </div>
+            <br><br>
+            <div id="check-up">
+                <img src="{% static 'images/Frame14.png' %}" alt="">
+
+            </div>
+            <br><br>
+        </div>
+        <div class="col-md-6">
+            <div id="dash-queue">
+              <a href="/queue"  target="_blank"><img src="{% static 'images/Frame11.png' %}" alt=""></a> 
+
+            </div>
+            <br><br>
+            <div id="web-online">
+                <img src="{% static 'images/Frame15.png' %}" alt="">
+
+            </div>
+            <br><br>
+            <div id="design">
+                <img src="{% static 'images/Frame16.png' %}" alt="">
+
+            </div>
+            <br><br>
+            <div id="iot">
+                <img src="{% static 'images/Frame17.png' %}" alt="">
+
+            </div>
+            <br><br>
+        </div>
+    </div>
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELECORP Co.,LTD.</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'CSS/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/styles.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'owlcarousel/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'owlcarousel/owl.theme.default.min.css' %}">
+
+    <script src="{% static 'owlcarousel/jquery.min.js' %}"></script>
+    <script src="{% static 'owlcarousel/owl.carousel.min.js' %}"></script>
+
+</head>
+
+<body>
+
+
+    {% block content %}
+
+    {% endblock %}
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div >
+            <div class="d-flex justify-content-between flex-wrap">
+                <section id="foot-logo" class="mx-auto" style="margin-top: 15px;">
+                    <img src="{% static 'images/TelecorpIconBig.svg' %}" alt="">
+                </section>
+
+                <section id="aboutus" class="mx-auto" style="margin-top: 15px;">
+                    <p><img src="{% static 'images/IconAboutus.svg' %}" alt=""><a
+                            href="/aboutus"><span>&emsp;&emsp;&emsp;เกี่ยวกับเรา</span></a></p><br>
+                    <p><img src="{% static 'images/IconCustomers.svg' %}" alt=""><a
+                            href="/ourcustomers"><span>&emsp;&emsp;&emsp;รายนามลูกค้า</span></a></p><br>
+                    <p><img src="{% static 'images/IconArticles.svg' %}" alt=""><a
+                            href="/articles"><span>&emsp;&emsp;&emsp;ข่าวสารและกิจกรรม</span></a></p><br>
+                    <p><img src="{% static 'images/IconContactus.svg' %}" alt=""><a
+                            href="/contactus"><span>&emsp;&emsp;&emsp;สมัครงาน โทร.0969266020</span></a></p><br>
+                </section>
+
+                <section id="address" class="mx-auto" style="margin-top: 15px;">
+                    <div>
+                        <p>บริษัท เทเลคอร์ป จำกัด</p>
+                        <p>เลขที่ 216/51-52 </p>
+                        <p>ถนนกาญจนาภิเษก แขวงทับช้าง </p>
+                        <p>เขตสะพานสูง กรุงเทพฯ 10250</p>
+                    </div>
+                    <br>
+                    <div id="contact">
+                        <p>Email: trin.bo@telecorp.co.th </p>
+                        <p>Phone: 088-673-9000</p>
+                    </div>
+                    <div id="icon-foot">
+                        <div class="d-flex justify-content-between">
+                            <div class="">
+                                <img src="{% static 'images/Icon_Email.svg' %}" alt="">
+                            </div>
+                            <div class="">
+                               <a target="_blank"   href="https://www.facebook.com/Telecorp-CoLTD-215482558786784"><img src="{% static 'images/IconFacebook.svg' %}" alt=""></a>
+                            </div>
+                            <div class="">
+                                <img src="{% static 'images/IconPhone.svg' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <br>
+            <div class="text-center">&copy; Copyright 2022 TELECORP Co.,LTD.</div>
+
+    </footer>
+
+
+    <!-- Cookie Banner -->
+    <div class="cookie-container">
+        <p>
+            <span>เมื่อคลิ๊ก </span><button type="button" class="cookie-btn">อนุญาตทั้งหมด</button>
+            ถือว่าท่านได้อนุญาตให้เราใช้คุกกี้ตามนโยบายคุกกี้ของเรา
+            นโยบายคุกกี้ของเราจะอธิบายความหมายของคุกกี้ว่าทำงานอย่างไร
+            เหตุผลการใช้คุกกี้ และรวมวิธีการลบคุกกี้เพื่อความเป็นส่วนตัวของท่าน
+            โดยท่านสามารถศึกษานโยบายคุกกี้ของเราเพิ่มเติมได้ที่<span><a href="/cookie_policy"> นโยบาย Cookie
+                    >></a></span>
+        </p>
+
+    </div>
+
+
+
+    <!-- MOdal JavaScript function -->
+    <script>
+
+        $(document).ready(function () {
+            $("#myModal").modal('show');
+            if (localStorage.getItem("ModalDisplayed")) {
+                $('#myModal').modal('hide')
+            }
+        });
+
+       
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="js/jquery-3.2.1.slim.min.js"></script> -->
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/javascript.js' %}"></script>
+
+
+</body>
+
+</html>

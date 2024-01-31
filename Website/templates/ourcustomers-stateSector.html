@@ -1,0 +1,155 @@
+{% extends 'header.html' %}
+
+{% block content %}
+{% load static %}
+
+<!-- Navbar Zone -->
+<header>
+    <nav id="header-nav" class="navbar navbar-expand-lg navbar-dark ">
+
+        <div class="container-fluid">
+
+            <div class="">
+                <a href="/" class="">
+                    <div id="logo-img" alt="Logo image"></div>
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartlc"
+                aria-controls="navbartlc" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navbartlc" class="collapse navbar-collapse ">
+                <div style="display:flex; flex-direction: column; justify-items: end;" class="ml-auto">
+                    <ul class="navbar-nav ml-auto" id="navitem-up">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/ourcustomers" style="color: #EFCB4D">รายนามลูกค้า |</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/career" style="color: #FFFFFF">ร่วมงานกับเรา</a>
+                        </li>
+                    </ul>
+
+
+                    <ul class="navbar-nav ml-auto" id="navitem-low">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/" style="color:#FFFFFF;">หน้าหลัก&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/aboutus" style="color: #FFFFFF ">เกี่ยวกับเรา&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/productsnservices"
+                                style="color: #FFFFFF">สินค้าและบริการ&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/articles" style="color:#FFFFFF ">ข่าวสารและกิจกรรม&emsp;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contactus" style="color: #FFFFFF">ติดต่อเรา</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- <a class="hamburger-menu" onclick="myFunction()">
+                    <span class="hamburger-icon"></span>
+                </a> -->
+
+            </div>
+
+        </div>
+    </nav>
+</header>
+<!-- END Navbar -->
+
+<br>
+<div class="contianer" id="customers-head">
+    <h1>รายนามลูกค้า</h1>
+</div>
+<br>
+<div id="customers-nav">
+    <ul class="nav" id="">
+        <li class="nav-item active">
+            <a class="nav-link" href="/ourcustomers">ทั้งหมด</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/ourcustomers_company">หน่วยงานเอกชน</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/ourcustomers_stateSector" style="color:#364969;">หน่วยงานราชการ</a>
+        </li>
+    </ul>
+</div>
+
+<div class="container" id="customers-logo" style="margin-top: 30px; margin-bottom: 35px;">
+
+    <div class="list-group list-group-horizontal">
+
+        <!-- ราชการ -->
+        <a target="_blank" href="https://www.rajavithi.go.th/"
+            class="list-group-item list-group-item-action" >โรงพยาบาลราชวิถี</a>
+        <a target="_blank" href="http://www.nopparat.go.th/nrhweb62/index5.php"
+            class="list-group-item list-group-item-action">โรงพยาบาลนพรัตนราชธานี</a>
+        <a target="_blank" href="https://www.pranangklao.go.th/webpnk60/index.php"
+            class="list-group-item list-group-item-action">โรงพยาบาลพระนั่งเกล้า</a>
+    </div>
+
+
+    <div class="list-group list-group-horizontal">
+        <a target="_blank" href="https://brh.moph.go.th/"
+            class="list-group-item list-group-item-action">โรงพยาบาลบุรีรัมย์</a>
+        <a target="_blank" href="https://www.iod.go.th/en/"
+            class="list-group-item list-group-item-action">สถาบันโรคผิวหนัง</a>
+        <a target="_blank" href="https://www.moph.go.th/"
+            class="list-group-item list-group-item-action">กระทรวงสาธารณสุข</a>
+    </div>
+
+    <div class="list-group list-group-horizontal">
+        <a target="_blank" href="https://www.dms.go.th/" class="list-group-item list-group-item-action">กรมการแพทย์</a>
+        <a target="_blank" href="https://www.cpird.in.th/" class="list-group-item list-group-item-action">สำนักงานบริหารโครงการร่วมผลิตแพทย์เพิ่มเพื่อชาวชนบท CPIRD</a>
+        <a class="col-md-4"></a>
+    </div>
+
+</div>
+
+<!-- <div class="container" id="customers-logo">
+    <div class="row">
+        <div class="col-md-3 col-sm-6" id="logo">
+            <img src="{% static 'images/rajvithi.png' %}">
+        </div>
+        <div class="col-md-3 col-sm-6" id="logo">
+            <img src="{% static 'images/CPIRD.png' %}">
+        </div>
+        <div class="col-md-3 col-sm-6" id="logo">
+            <img src="{% static 'images/publichealth.png' %}">
+        </div>
+        <div class="col-md-3 col-sm-6" id="logo">
+            <img src="{% static 'images/med_service.PNG' %}">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6" id="logo">
+            <img src="{% static 'images/nopparat.png' %}" >
+        </div>
+        <div class="col-md-6" id="logo">
+            <img src="{% static 'images/pranungklao.png' %}" style="padding-top:50px;" >
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6" id="logo">
+            <img src="{% static 'images/derma.png' %}" >
+        </div>
+        <div class="col-md-6" id="logo">
+            <img src="{% static 'images/buriram.jpg' %}" style="padding-top:30px; width:120%" >
+        </div>
+    </div>
+
+</div> -->
+<br><br>
+
+{% endblock %}
